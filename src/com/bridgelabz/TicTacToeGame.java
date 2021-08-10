@@ -15,8 +15,9 @@ public class TicTacToeGame {
     public static char computerChoice;
 
     /**
-     * This is the main method which makes use of createBoard method and
-     * playerTurn method
+     * This is the main method which makes use of createBoard method,
+     * playerTurn method and
+     * showBoard method
      * @param args Unused
      */
     public static void main(String[] args) {
@@ -24,6 +25,7 @@ public class TicTacToeGame {
         Scanner sc = new Scanner(System.in);
         board = createBoard();
         playerTurn(sc);
+        showBoard();
     }
 
     /**
@@ -55,5 +57,16 @@ public class TicTacToeGame {
             playerChoice = 'X';
         } else
             System.out.println("PLEASE ENTER A VALID OPTION");
+    }
+
+    /**
+     * This showBoard method will be displaying the current board
+     */
+    public static void showBoard() {
+        System.out.println(board[1] + "|" + board[2] + "|" + board[3]);
+        System.out.println("-+-+-");
+        System.out.println(board[4] + "|" + board[5] + "|" + board[6]);
+        System.out.println("-+-+-");
+        System.out.println(board[7] + "|" + board[8] + "|" + board[9]);
     }
 }
