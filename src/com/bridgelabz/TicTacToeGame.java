@@ -1,14 +1,13 @@
 package com.bridgelabz;
+
 /**
-<<<<<<< HEAD
  * Purpose : To create a Tic Tac Toe Game
-=======
  * Purpose : To create a Tic Tac Toe Game Board
->>>>>>> UC1_CreateBoard
+ *
  * @author SUDIP PANJA
  * @version 11.0.11
  * @since 2021-08-10
- * */
+ */
 public class TicTacToeGame {
     public static char[] board;
 
