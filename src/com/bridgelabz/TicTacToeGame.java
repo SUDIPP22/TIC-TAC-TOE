@@ -28,6 +28,12 @@ public class TicTacToeGame {
         playerTurn(sc);
         showBoard();
         userPlay(sc);
+        /*
+        * This condition indicates if free space  is available on the board
+        * then user will be making desired move
+         */
+        if (isSpaceFree(board, 9))
+            userPlay(sc);
     }
 
     /**
@@ -115,5 +121,14 @@ public class TicTacToeGame {
         showBoard();
     }
 
+    /**
+     * This isSpaceFree method indicates ability for checking the free space on the board
+     * @param board This is the first parameter to isSpaceFree method
+     * @param index This is the second parameter to isSpaceFree method
+     * @return This returns the free space
+     */
+    public static boolean isSpaceFree(char[] board, int index) {
+        return board[index] == ' ';
+    }
 }
 
